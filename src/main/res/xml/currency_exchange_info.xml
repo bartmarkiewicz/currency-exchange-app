@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.androidprojects.bartek.currencyconverter.CurrencyExchangeConfigureActivity"
+    android:initialKeyguardLayout="@layout/currency_exchange"
+    android:initialLayout="@layout/currency_exchange"
+    android:minWidth="180dp"
+    android:minHeight="180dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="13200000"
+    android:widgetCategory="home_screen"></appwidget-provider>

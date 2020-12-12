@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure Widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="to_currency">To Currency:</string>
+    <string name="from_currency">From Currency:</string>
+</resources>

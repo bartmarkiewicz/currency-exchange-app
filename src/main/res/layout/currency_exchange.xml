@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:background="#2e3186a3"
+    android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/delBt"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num7"
+        android:layout_alignStart="@+id/fromDisplay"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:text="DEL" />
+
+    <Button
+        android:id="@+id/num0"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num8"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/num7"
+        android:background="@drawable/shape"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/num13"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="156dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num0"
+        android:layout_alignStart="@+id/fromLabel"
+        android:layout_alignEnd="@+id/currencyTo"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/shape"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/clearBT"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num9"
+        android:layout_alignEnd="@+id/toDisplay"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/num8"
+        android:background="@drawable/shape"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/num7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num4"
+        android:layout_alignStart="@+id/fromDisplay"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/num8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num5"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/num7"
+        android:background="@drawable/shape"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/num9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num6"
+        android:layout_alignEnd="@+id/toDisplay"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/num8"
+        android:background="@drawable/shape"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/num3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/toTV"
+        android:layout_alignEnd="@+id/toDisplay"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/num2"
+        android:background="@drawable/shape"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/num4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num1"
+        android:layout_alignStart="@+id/fromDisplay"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/num5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num2"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/num7"
+        android:background="@drawable/shape"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/num6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/num2"
+        android:layout_alignEnd="@+id/toDisplay"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/num5"
+        android:background="@drawable/shape"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/toTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fromLabel"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/fromLabel"
+        android:contentDescription="@string/appwidget_text"
+        android:text="to"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/currencyTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fromLabel"
+        android:layout_alignEnd="@+id/toDisplay"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="(EUR)"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="(GBP)"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fromDisplay"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromLabel"
+        android:layout_alignStart="@+id/fromLabel"
+        android:layout_alignBottom="@+id/toTV"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/numdisplay"
+        android:text="23123"
+        android:textAlignment="textEnd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/toDisplay"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toTV"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/toTV"
+        android:background="@drawable/numdisplay"
+        android:text="9214.00"
+        android:textAlignment="textEnd"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/num1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/toTV"
+        android:layout_alignStart="@+id/fromDisplay"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/num2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/toTV"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/num1"
+        android:background="@drawable/shape"
+        android:text="2" />
+
+</RelativeLayout>
